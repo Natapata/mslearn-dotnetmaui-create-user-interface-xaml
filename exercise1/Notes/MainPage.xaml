@@ -2,11 +2,13 @@
 <ContentPage
     x:Class="Notes.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mycode="clr-namespace:Notes">
 
     <VerticalStackLayout Margin="30,60,30,30">
         <Label
             FontAttributes="Bold"
+            FontSize="{mycode:GlobalFontSize}"
             HorizontalOptions="Center"
             Text="Notes" />
         <Editor
