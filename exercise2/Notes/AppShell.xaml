@@ -6,7 +6,7 @@
     xmlns:local="clr-namespace:Notes">
 
     <ShellContent
-        Title="AlignmentPage"
+        Title="Alignment"
         ContentTemplate="{DataTemplate local:AlignmentPage}"
         Route="AlignmentPage" />
     <ShellContent
@@ -14,9 +14,13 @@
         ContentTemplate="{DataTemplate local:LayoutExamplePage}"
         Route="LayoutExamplePage" />
     <ShellContent
+        Title="TipCalculator"
+        ContentTemplate="{DataTemplate local:TipCalulatorPage}"
+        Route="TipCalculatorPage" />
+    <ShellContent
         Title="Notes"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate local:NotesPage}"
+        Route="NotesPage" />
 
 
 

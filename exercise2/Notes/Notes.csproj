@@ -70,6 +70,9 @@
 	  <Compile Update="LayoutExamplePage.xaml.cs">
 	    <DependentUpon>LayoutExamplePage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="TipCalculator.xaml.cs">
+	    <DependentUpon>TipCalculator.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 	
 	<ItemGroup>
