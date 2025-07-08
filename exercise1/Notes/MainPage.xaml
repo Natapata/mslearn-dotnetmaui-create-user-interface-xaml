@@ -4,6 +4,9 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:mycode="clr-namespace:Notes">
+    <ContentPage.Resources>
+        <x:Double x:Key="resourceFontSize">16</x:Double>
+    </ContentPage.Resources>
 
     <VerticalStackLayout Margin="30,60,30,30">
         <Label
@@ -20,11 +23,13 @@
             <Button
                 Grid.Column="0"
                 Clicked="OnSaveButtonClicked"
+                FontSize="{StaticResource resourceFontSize}"
                 Text="Save"
                 WidthRequest="100" />
             <Button
                 Grid.Column="2"
                 Clicked="OnDeleteButtonClicked"
+                FontSize="{StaticResource resourceFontSize}"
                 Text="Delete"
                 WidthRequest="100" />
         </Grid>
