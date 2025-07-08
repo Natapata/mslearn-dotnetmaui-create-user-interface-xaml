@@ -8,7 +8,13 @@
         <x:Double x:Key="resourceFontSize">16</x:Double>
     </ContentPage.Resources>
 
-    <VerticalStackLayout Margin="30,60,30,30">
+    <VerticalStackLayout Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+        <VerticalStackLayout.BackgroundColor>
+            <OnPlatform x:TypeArguments="Color">
+                <On Platform="iOS, Android" Value="LightYellow" />
+                <On Platform="WinUI" Value="White" />
+            </OnPlatform>
+        </VerticalStackLayout.BackgroundColor>
         <Label
             FontAttributes="Bold"
             FontSize="{mycode:GlobalFontSize}"
