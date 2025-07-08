@@ -3,12 +3,21 @@
     x:Class="Notes.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Notes"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:local="clr-namespace:Notes">
 
     <ShellContent
-        Title="Home"
+        Title="AlignmentPage"
+        ContentTemplate="{DataTemplate local:AlignmentPage}"
+        Route="AlignmentPage" />
+    <ShellContent
+        Title="LayoutExample"
+        ContentTemplate="{DataTemplate local:LayoutExamplePage}"
+        Route="LayoutExamplePage" />
+    <ShellContent
+        Title="Notes"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+
 
 </Shell>

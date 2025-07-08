@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Notes.AlignmentPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="AlignmentPage">
+    <Grid
+        Padding="20"
+        RowDefinitions="50,50,*"
+        RowSpacing="10">
+
+        <HorizontalStackLayout
+            x:Name="HButtons"
+            Grid.Row="0"
+            Spacing="10">
+            <Label Text="Horizontal" VerticalOptions="Center" />
+            <Button Clicked="OnHorizontalStartClicked" Text="Start" />
+            <Button Clicked="OnHorizontalCenterClicked" Text="Center" />
+            <Button Clicked="OnHorizontalEndClicked" Text="End" />
+            <Button Clicked="OnHorizontalFillClicked" Text="Fill" />
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout
+            x:Name="VButtons"
+            Grid.Row="1"
+            Spacing="10">
+            <Label Text="Vertical" VerticalOptions="Center" />
+            <Button Clicked="OnVerticalStartClicked" Text="Start" />
+            <Button Clicked="OnVerticalCenterClicked" Text="Center" />
+            <Button Clicked="OnVerticalEndClicked" Text="End" />
+            <Button Clicked="OnVerticalFillClicked" Text="Fill" />
+        </HorizontalStackLayout>
+
+        <Label
+            x:Name="target"
+            Grid.Row="2"
+            BackgroundColor="Silver"
+            FontSize="25"
+            Text="Hello" />
+
+    </Grid>
+</ContentPage>
