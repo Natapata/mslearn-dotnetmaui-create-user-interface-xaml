@@ -70,8 +70,11 @@
 	  <Compile Update="LayoutExamplePage.xaml.cs">
 	    <DependentUpon>LayoutExamplePage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="TipCalculator.xaml.cs">
-	    <DependentUpon>TipCalculator.xaml</DependentUpon>
+	  <Compile Update="MirroredTimeCalculatorPage.xaml.cs">
+	    <DependentUpon>MirroredTimeCalculatorPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="TipCalculatorPage.xaml.cs">
+	    <DependentUpon>TipCalculatorPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 	
@@ -80,6 +83,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="LayoutExamplePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MirroredTimeCalculatorPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

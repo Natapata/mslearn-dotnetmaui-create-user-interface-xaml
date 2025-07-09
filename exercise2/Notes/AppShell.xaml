@@ -15,13 +15,16 @@
         Route="LayoutExamplePage" />
     <ShellContent
         Title="TipCalculator"
-        ContentTemplate="{DataTemplate local:TipCalulatorPage}"
+        ContentTemplate="{DataTemplate local:TipCalculatorPage}"
         Route="TipCalculatorPage" />
     <ShellContent
         Title="Notes"
         ContentTemplate="{DataTemplate local:NotesPage}"
         Route="NotesPage" />
-
+    <ShellContent
+        Title="MirroredTimeCalculatorPage"
+        ContentTemplate="{DataTemplate local:MirroredTimeCalculatorPage}"
+        Route="MirroredTimeCalculatorPage" />
 
 
 </Shell>
