@@ -25,6 +25,13 @@
         Title="MirroredTimeCalculatorPage"
         ContentTemplate="{DataTemplate local:MirroredTimeCalculatorPage}"
         Route="MirroredTimeCalculatorPage" />
-
+    <ShellContent
+        Title="ControlsBindingPage"
+        ContentTemplate="{DataTemplate local:ControlsBindingPage}"
+        Route="ControlsBindingPage" />
+    <ShellContent
+        Title="What's the weather like?"
+        ContentTemplate="{DataTemplate local:WeatherClient}"
+        Route="WeatherClient" />
 
 </Shell>

@@ -8,6 +8,7 @@
     <VerticalStackLayout Padding="{OnPlatform '30', iOS='30,60,30,30'}" Spacing="8">
         <Label
             FontAttributes="Bold"
+            FontSize="16"
             HorizontalOptions="Center"
             Text="Notes"
             TextColor="{x:Static Member=learnMAUI:SharedRescources.FontColor}" />
@@ -25,6 +26,7 @@
                 Grid.Column="0"
                 BackgroundColor="{x:Static Member=learnMAUI:SharedRescources.BackgroundColor}"
                 Clicked="OnSaveButtonClicked"
+                FontSize="14"
                 Text="Save"
                 TextColor="{x:Static Member=learnMAUI:SharedRescources.FontColor}"
                 WidthRequest="100" />
@@ -33,6 +35,7 @@
                 Grid.Column="2"
                 BackgroundColor="{x:Static Member=learnMAUI:SharedRescources.BackgroundColor}"
                 Clicked="OnDeleteButtonClicked"
+                FontSize="14"
                 Text="Delete"
                 TextColor="{x:Static Member=learnMAUI:SharedRescources.FontColor}"
                 WidthRequest="100" />

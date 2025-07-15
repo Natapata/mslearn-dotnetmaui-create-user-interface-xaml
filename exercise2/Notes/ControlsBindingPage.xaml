@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Notes.ControlsBindingPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ControlsBindingPage">
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label
+            x:Name="TargetLabel"
+            BackgroundColor="Yellow"
+            Text="TEXT TO ROTATE" />
+        <Slider
+            Maximum="360"
+            WidthRequest="100"
+            Value="{Binding Rotation, Mode=OneWayToSource, Source={x:Reference TargetLabel}}" />
+    </VerticalStackLayout>
+</ContentPage>
