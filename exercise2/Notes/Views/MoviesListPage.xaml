@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Notes.Views.MoviesListPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Notes"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:vm="clr-namespace:Notes.ViewModels"
+    Title="Movies"
+    x:DataType="vm:MovieListViewModel"
+    BindingContext="{x:Static local:App.MainViewModel}">
+    <ListView
+        Margin="10"
+        ItemTapped="ListView_ItemTapped"
+        ItemsSource="{Binding Movies}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell x:DataType="vm:MovieViewModel" Text="{Binding Title}">
+                    <TextCell.ContextActions>
+                        <MenuItem
+                            Clicked="MenuItem_Clicked"
+                            IsDestructive="True"
+                            Text="Delete" />
+                    </TextCell.ContextActions>
+                </TextCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

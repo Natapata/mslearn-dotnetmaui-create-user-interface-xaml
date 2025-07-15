@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="Notes.MainPage"
+    x:Class="Notes.NotesPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:notes="clr-namespace:Notes">
 
-    <VerticalStackLayout Padding="30,60,30,30">
+    <VerticalStackLayout Padding="{OnPlatform '30', iOS='30,60,30,30'}" Spacing="8">
         <Label
             FontAttributes="Bold"
+            FontSize="20"
             HorizontalOptions="Center"
             Text="Notes"
             TextColor="{x:Static Member=notes:SharedRescources.FontColor}" />
 
         <Editor
             x:Name="editor"
-            Margin="0,8,0,8"
             HeightRequest="{OnPlatform 100,
                                        iOS=500,
                                        Android=500}"
@@ -26,6 +26,7 @@
                 Grid.Column="0"
                 BackgroundColor="{x:Static Member=notes:SharedRescources.BackgroundColor}"
                 Clicked="OnSaveButtonClicked"
+                FontSize="14"
                 Text="Save"
                 TextColor="{x:Static Member=notes:SharedRescources.FontColor}"
                 WidthRequest="100" />
@@ -34,6 +35,7 @@
                 Grid.Column="2"
                 BackgroundColor="{x:Static Member=notes:SharedRescources.BackgroundColor}"
                 Clicked="OnDeleteButtonClicked"
+                FontSize="14"
                 Text="Delete"
                 TextColor="{x:Static Member=notes:SharedRescources.FontColor}"
                 WidthRequest="100" />

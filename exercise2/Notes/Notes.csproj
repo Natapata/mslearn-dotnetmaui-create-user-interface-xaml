@@ -59,39 +59,47 @@
 	</ItemGroup>
 	
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="12.1.0" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.90" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.7" />
 	</ItemGroup>
 	
 	<ItemGroup>
-	  <Compile Update="AlignmentPage.xaml.cs">
+	  <Compile Update="Views\AlignmentPage.xaml.cs">
 	    <DependentUpon>AlignmentPage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="LayoutExamplePage.xaml.cs">
+	  <Compile Update="Views\LayoutExamplePage.xaml.cs">
 	    <DependentUpon>LayoutExamplePage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="MirroredTimeCalculatorPage.xaml.cs">
+	  <Compile Update="Views\MirroredTimeCalculatorPage.xaml.cs">
 	    <DependentUpon>MirroredTimeCalculatorPage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="TipCalculatorPage.xaml.cs">
+	  <Compile Update="Views\TipCalculatorPage.xaml.cs">
 	    <DependentUpon>TipCalculatorPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 	
 	<ItemGroup>
-	  <MauiXaml Update="AlignmentPage.xaml">
+	  <MauiXaml Update="Views\AlignmentPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ControlsBindingPage.xaml">
+	  <MauiXaml Update="Views\ControlsBindingPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="LayoutExamplePage.xaml">
+	  <MauiXaml Update="Views\LayoutExamplePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MirroredTimeCalculatorPage.xaml">
+	  <MauiXaml Update="Views\MirroredTimeCalculatorPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="WeatherClient.xaml">
+	  <MauiXaml Update="Views\MovieDetailPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MoviesListPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\WeatherClient.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

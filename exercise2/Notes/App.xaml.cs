@@ -2,7 +2,8 @@
 
 public partial class App : Application
 {
-	public App()
+    public static ViewModels.MovieListViewModel? MainViewModel { get; private set; }
+    public App()
 	{
 		InitializeComponent();
 
@@ -11,6 +12,11 @@ public partial class App : Application
 
 	protected override Window CreateWindow(IActivationState activationState)
 	{
-		return new Window(new AppShell());
-	}
+        var window = new Window(new AppShell());
+
+        MainViewModel = new();
+        MainViewModel.RefreshMovies().ContinueWith((s) => { });
+
+        return window;
+    }
 }

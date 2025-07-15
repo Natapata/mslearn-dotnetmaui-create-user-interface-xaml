@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Notes.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:notes="clr-namespace:Notes">
+
+    <VerticalStackLayout Padding="30,60,30,30">
+        <Label
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            Text="This is a colletion of exercises done in the MAUI Learing Path of Microsoft" />
+    </VerticalStackLayout>
+
+</ContentPage>
