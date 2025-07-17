@@ -2,12 +2,10 @@
 
 namespace Notes.ViewModels;
 
-public class MovieViewModel : ObservableObject
+public partial class MovieViewModel : ObservableObject
 {
+    // not using ObservableProperty here to manually implement INotifyPropertyChanged
     private string _title;
-    private string _studio;
-    private string _director;
-    private DateOnly _year;
 
     public string Title
     {
@@ -15,23 +13,15 @@ public class MovieViewModel : ObservableObject
         set => SetProperty(ref _title, value);
     }
 
-    public string Studio
-    {
-        get => _studio;
-        set => SetProperty(ref _studio, value);
-    }
+    // using ObservableProperty to automatically implement INotifyPropertyChanged
+    [ObservableProperty]
+    private string _studio;
 
-    public string Director
-    {
-        get => _director;
-        set => SetProperty(ref _director, value);
-    }
+    [ObservableProperty]
+    private string _director;
 
-    public DateOnly Year
-    {
-        get => _year;
-        set => SetProperty(ref _year, value);
-    }
+    [ObservableProperty]
+    private DateOnly _year;
 
     public MovieViewModel(Models.Movie movie)
     {

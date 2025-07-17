@@ -12,13 +12,15 @@
     <ListView
         Margin="10"
         ItemTapped="ListView_ItemTapped"
-        ItemsSource="{Binding Movies}">
+        ItemsSource="{Binding Movies}"
+        SelectedItem="{Binding SelectedMovie, Mode=OneWayToSource}">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell x:DataType="vm:MovieViewModel" Text="{Binding Title}">
                     <TextCell.ContextActions>
                         <MenuItem
-                            Clicked="MenuItem_Clicked"
+                            Command="{Binding DeleteMovieCommand, Source={x:Static local:App.MainViewModel}}"
+                            CommandParameter="{Binding}"
                             IsDestructive="True"
                             Text="Delete" />
                     </TextCell.ContextActions>
