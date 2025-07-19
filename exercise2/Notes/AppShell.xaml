@@ -7,9 +7,9 @@
     xmlns:view="clr-namespace:Notes.Views">
 
     <ShellContent
-        Title="MovieCatalog"
-        ContentTemplate="{DataTemplate view:MoviesListPage}"
-        Route="MovieListPage" />
+        Title="StandardTip"
+        ContentTemplate="{DataTemplate local:StandardTipPage}"
+        Route="StandardTipPage" />
     <ShellContent
         Title="Welcome"
         ContentTemplate="{DataTemplate local:MainPage}"
@@ -42,5 +42,9 @@
         Title="What's the weather like?"
         ContentTemplate="{DataTemplate local:WeatherClient}"
         Route="WeatherClient" />
+    <ShellContent
+        Title="MovieCatalog"
+        ContentTemplate="{DataTemplate view:MoviesListPage}"
+        Route="MovieListPage" />
 
 </Shell>

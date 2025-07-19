@@ -11,7 +11,7 @@
             FontSize="20"
             HorizontalOptions="Center"
             Text="Notes"
-            TextColor="{x:Static Member=notes:SharedRescources.FontColor}" />
+            TextColor="{x:Static Member=notes:SharedResources.FontColor}" />
 
         <Editor
             x:Name="editor"
@@ -19,25 +19,25 @@
                                        iOS=500,
                                        Android=500}"
             Placeholder="Enter your note"
-            TextColor="{x:Static Member=notes:SharedRescources.FontColor}" />
+            TextColor="{x:Static Member=notes:SharedResources.FontColor}" />
 
         <Grid ColumnDefinitions="Auto, 30, Auto">
             <Button
                 Grid.Column="0"
-                BackgroundColor="{x:Static Member=notes:SharedRescources.BackgroundColor}"
+                BackgroundColor="{x:Static Member=notes:SharedResources.BackgroundColor}"
                 Clicked="OnSaveButtonClicked"
                 FontSize="14"
                 Text="Save"
-                TextColor="{x:Static Member=notes:SharedRescources.FontColor}"
+                TextColor="{x:Static Member=notes:SharedResources.FontColor}"
                 WidthRequest="100" />
 
             <Button
                 Grid.Column="2"
-                BackgroundColor="{x:Static Member=notes:SharedRescources.BackgroundColor}"
+                BackgroundColor="PaleVioletRed"
                 Clicked="OnDeleteButtonClicked"
                 FontSize="14"
                 Text="Delete"
-                TextColor="{x:Static Member=notes:SharedRescources.FontColor}"
+                TextColor="{x:Static Member=notes:SharedResources.FontColor}"
                 WidthRequest="100" />
         </Grid>
     </VerticalStackLayout>
