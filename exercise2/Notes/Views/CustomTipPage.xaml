@@ -14,22 +14,19 @@
             x:Name="billLabel"
             Grid.Row="0"
             Grid.Column="0"
-            FontAttributes="Bold"
-            FontSize="22"
+            Style="{StaticResource infoLabelStyle}"
             Text="Bill" />
         <Label
             x:Name="tipLabel"
             Grid.Row="1"
             Grid.Column="0"
-            FontAttributes="Bold"
-            FontSize="22"
+            Style="{StaticResource infoLabelStyle}"
             Text="Tip" />
         <Label
             x:Name="totalLabel"
             Grid.Row="2"
             Grid.Column="0"
-            FontAttributes="Bold"
-            FontSize="22"
+            Style="{StaticResource infoLabelStyle}"
             Text="Total" />
 
         <Entry
@@ -42,13 +39,13 @@
             x:Name="tipOutput"
             Grid.Row="1"
             Grid.Column="1"
-            FontSize="22"
+            Style="{StaticResource baseLabelStyle}"
             Text="0.00" />
         <Label
             x:Name="totalOutput"
             Grid.Row="2"
             Grid.Column="1"
-            FontSize="22"
+            Style="{StaticResource baseLabelStyle}"
             Text="0.00" />
 
         <Grid
@@ -66,8 +63,7 @@
             <Label
                 Grid.Row="0"
                 Grid.Column="0"
-                FontAttributes="Bold"
-                FontSize="Medium"
+                Style="{StaticResource infoLabelStyle}"
                 Text="Tip Percentage" />
             <Label
                 x:Name="tipPercent"
